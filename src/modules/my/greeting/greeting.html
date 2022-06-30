@@ -1,0 +1,7 @@
+<template>
+    <div class="msg">{msg}</div>
+    <template for:each={names} for:item="name">
+        <p key={name}>i love {name}</p>
+    </template>
+    <button onclick={callParent} >pass data to app comp</button>
+</template>

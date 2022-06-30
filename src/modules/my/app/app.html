@@ -1,0 +1,8 @@
+<template>
+    <h1>{addNumber}</h1>
+    <template for:each={names} for:item='name'>
+        <h3 key={name}>{name}</h3>
+    </template>
+  <my-greeting msg={greetingMsg} names={names} onnamechange={nameChange}>
+  </my-greeting>
+</template>
